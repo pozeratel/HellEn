@@ -1,0 +1,22 @@
+@mixin titles() {
+    font-size: 46px;
+    font-weight: 800;
+    line-height: 1.3;
+    letter-spacing: 1.38px;
+}
+
+@mixin text() {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 1.44px;
+}
+
+@mixin subtitle($height:1.4) {
+    font-size: 30px;
+    font-weight: 700;
+    line-height:$height;
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+}
