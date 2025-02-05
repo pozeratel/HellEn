@@ -1,5 +1,5 @@
 {
-  "name": "HellEn",
+  "name": "hellen",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "glob": "^8.1.0",
+    "scss": "^0.2.4",
     "vite": "^4.0.5"
   },
   "author": " ",
