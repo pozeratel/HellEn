@@ -1,15 +1,15 @@
-@mixin titles($font: 46px, $line: 130%, $weight: 800, $letter: 800) {
+@mixin titles($font: 46px, $line: 1.2, $weight: 800, $letter: 800) {
     font-size: $font;
     font-weight: $weight;
     line-height: $line;
     letter-spacing: $letter;
 }
 
-@mixin text() {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 1.44px;
+@mixin text($text-size: 18px, $text-weight: 500, $text-height: 1.5, $text-spacing: 1.44px) {
+    font-size: $text-size;
+    font-weight: $text-weight;
+    line-height: $text-height ;
+    letter-spacing: $text-spacing;
 }
 
 @mixin subtitle($height: 1.4) {
@@ -18,4 +18,11 @@
     line-height: $height;
     letter-spacing: 2.4px;
     text-transform: uppercase;
+}
+
+@mixin middle-text($middle-height:1.4) {
+    font-size: 20px;
+    font-weight: 700;
+    line-height:$middle-height;
+    letter-spacing: 1.6px;
 }

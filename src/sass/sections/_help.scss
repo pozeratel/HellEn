@@ -1,32 +1,70 @@
-// .help {
-//     padding: 25px 0 365xp 0;
-//     position: relative;
-//     background-color: $secondary-color;
+.help {
+    padding: 25px 0 365xp 0;
+    background-color: $secondary-color;
+    
+    &__hp {
+        position: relative;
+    }
 
-//     @media screen and (min-width:708px) {
-//         padding: 55px 0 192px 0;
-//     }
+    @media screen and (min-width:708px) {
+        padding: 55px 0 192px 0;
+    }
 
-//     @media screen and (min-width:1344px) {
-//         padding: 100px 0 280px 0;
-//     }
+    @media screen and (min-width:1344px) {
+        padding: 100px 0 280px 0;
+    }
 
-//     &__title {
-//         width: 280px;
-//         color: $text-color;
-//         @include titles($font:24px)
-//     }
+    &__title {
+        width: 800px;
+        color: $text-color;
+        @include titles($font: 46px);
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-//     &__span {
-//         color: $main-color;
-//         @include titles($font: 24px)
-//     }
-
-//     &__list {
-//         position: absolute;
-//         left: 0;
-//         top: 0;
-//     }
+    &__span {
+        color: $main-color;
+        @include titles($font: 46px);
+        margin-right: 10px;
+        letter-spacing: 1.38px;
+    }
 
 
-// }
+
+    &__list {
+        position: absolute;
+        left: 0;
+        top: 245px;
+        background-color: $text-color;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 67px 0;
+        row-gap: 30px;
+        column-gap: 40px;
+    }
+
+    &__item {
+        width: 336px;
+    }
+
+    &__number {
+        width: 336px;
+        margin-bottom: 10px;
+        color: $main-color;
+        @include middle-text()
+    }
+
+
+    &__text {
+        color: $secondary-color;
+        @include middle-text()
+    }
+
+    .help__item:nth-child(1) .help__text,
+    .help__item:nth-child(4) .help__text,
+    .help__item:nth-child(6) .help__text {
+        margin-bottom: 32px;
+    }
+}
