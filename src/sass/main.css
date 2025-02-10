@@ -51,6 +51,174 @@ body {
   font-family: Montserrat;
 }
 
+.hero__h1 {
+  color: #111518;
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.3; /* 75.4px */
+  letter-spacing: 1.74px;
+  width: 530px;
+  height: 225px;
+}
+.hero__text {
+  color: #b9b9b9;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.65; /* 33px */
+  letter-spacing: 1.6px;
+}
+.hero__text__span {
+  color: #111518;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.65;
+  letter-spacing: 1.6px;
+}
+.hero__link {
+  background-color: #ff6b09;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.21;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+}
+.hero__bottom__text {
+  color: #111518;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.64; /* 32.98px */
+  letter-spacing: 1.6px;
+  width: 239px;
+  height: 66px;
+}
+.hero__bg {
+  width: 842px;
+}
+.hero__svg {
+  fill: #ff6b09;
+  height: 48px;
+  width: 42px;
+}
+.hero__item {
+  display: flex;
+  gap: 8px;
+}
+.hero__list {
+  display: flex;
+  gap: 31px;
+  justify-content: center;
+}
+.hero__div {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 130px;
+}
+.hero__box {
+  padding-bottom: 132px;
+}
+
+.hero__h1 {
+  color: #111518;
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.3; /* 75.4px */
+  letter-spacing: 1.74px;
+  width: 530px;
+  height: 225px;
+}
+.hero__text {
+  color: #b9b9b9;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.65; /* 33px */
+  letter-spacing: 1.6px;
+}
+.hero__text__span {
+  color: #111518;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.65;
+  letter-spacing: 1.6px;
+}
+.hero__link {
+  background-color: #ff6b09;
+  padding-left: 70px;
+  padding-right: 70px;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  text-align: center;
+  border: none;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.21;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+}
+.hero__bottom__text {
+  color: #111518;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.64; /* 32.98px */
+  letter-spacing: 1.6px;
+  width: 239px;
+  height: 66px;
+}
+.hero__bg {
+  width: 842px;
+}
+.hero__svg {
+  fill: #ff6b09;
+  height: 48px;
+  width: 42px;
+}
+.hero__item {
+  display: flex;
+  gap: 8px;
+}
+.hero__list {
+  display: flex;
+  gap: 31px;
+  justify-content: center;
+}
+.hero__div {
+  display: flex;
+  gap: 50px;
+  margin-bottom: 130px;
+}
+.hero__box {
+  padding-bottom: 132px;
+}
+
 .help {
   padding: 25px 0 365px 0;
   background-color: #111518;

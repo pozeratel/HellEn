@@ -1,0 +1,87 @@
+.header {
+  background-color: $text-color;
+  width: 1314px;
+  height: 70px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 78px;
+  display: flex;
+  align-items: center;
+
+  &__box {
+   display: flex;
+  }
+
+  &__logo {
+    color: #111518;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.04px;
+    padding-right: 143px;
+
+    &::after{
+    content: "HELLISH ENGLISH";
+    color: $main-color;
+font-family: Montserrat;
+font-size: 8px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.44px;
+text-transform: uppercase;
+display: flex;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 34.94px;
+  }
+
+  &__item {
+    font-family: Montserrat;
+    color: $unaссented-color;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    transition: 0.3s;
+    
+   &:hover{
+    color: $main-color;
+   }
+  }
+
+
+  &__button {
+    color: $main-color;
+text-align: center;
+font-family: Montserrat;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.96px;
+text-transform: uppercase;
+border: 2px solid $main-color;
+padding: 13px 22px;
+margin-left: 83px;
+transition: 0.3s;
+  }
+
+  &__button:hover {
+    background: $main-color;
+    color: $text-color;
+  }
+
+  &__svg{
+    fill: $main-color;
+  }
+}
