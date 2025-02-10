@@ -51,6 +51,84 @@ body {
   font-family: Montserrat;
 }
 
+.header {
+  background-color: #fff;
+  width: 1314px;
+  height: 70px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 78px;
+  display: flex;
+  align-items: center;
+}
+.header__box {
+  display: flex;
+}
+.header__logo {
+  color: #111518;
+  font-family: Montserrat;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.04px;
+  padding-right: 143px;
+}
+.header__logo::after {
+  content: "HELLISH ENGLISH";
+  color: #FF6B09;
+  font-family: Montserrat;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.44px;
+  text-transform: uppercase;
+  display: flex;
+}
+.header__list {
+  display: flex;
+  align-items: center;
+  gap: 34.94px;
+}
+.header__item {
+  font-family: Montserrat;
+  color: #B9B9B9;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.header__item:hover {
+  color: #FF6B09;
+}
+.header__button {
+  color: #FF6B09;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+  border: 2px solid #FF6B09;
+  padding: 13px 22px;
+  margin-left: 83px;
+  transition: 0.3s;
+}
+.header__button:hover {
+  background: #FF6B09;
+  color: #fff;
+}
+.header__svg {
+  fill: #FF6B09;
+}
+
 .hero__h1 {
   color: #111518;
   font-family: Montserrat;
