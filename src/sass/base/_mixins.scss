@@ -1,4 +1,4 @@
-@mixin titles($font: 46px, $line: 1.2, $weight: 800, $letter: 800) {
+@mixin titles($font: 46px, $line: 1.2, $weight: 800, $letter: 1.38px) {
     font-size: $font;
     font-weight: $weight;
     line-height: $line;
@@ -20,9 +20,9 @@
     text-transform: uppercase;
 }
 
-@mixin middle-text($middle-height:1.4) {
-    font-size: 20px;
+@mixin middle-text($middle-height: 1.4, $font-size:20px) {
+    font-size: $font-size;
     font-weight: 700;
-    line-height:$middle-height;
+    line-height: $middle-height;
     letter-spacing: 1.6px;
 }
