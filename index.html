@@ -22,7 +22,7 @@
     
     
     <script type="module" crossorigin src="/HellEn/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/HellEn/assets/index-5fd21d37.css">
+    <link rel="stylesheet" href="/HellEn/assets/index-5157a83b.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -292,13 +292,15 @@
     
     
     <section class="feedback">
-  <div class="container">
+  <div class="container feedback__feed">
     <h2 class="feedback__title">Feedback from graduates</h2>
     <div class="feedback__wraper">
-      <img src="" alt="" class="feedback__img" />
-      <svg class="feedback__facebook">
-        <use href="../img/symbol-defs.svg#icon-facebook"></use>
-      </svg>
+      <div class="feedback__main">
+        <img src="/HellEn/assets/galasses-women-f89c5796.jpg" alt="" class="feedback__img" />
+        <svg class="feedback__facebook">
+          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-facebook"></use>
+        </svg>
+      </div>
       <div class="feedback__text">
         <h3 class="feedback__name">Tonya Kucherovskaya</h3>
         <p class="feedback__description">
@@ -315,31 +317,37 @@
         </p>
         <a href="#" class="feedback__read">Read more</a>
       </div>
-
-      <ul class="feedback__images">
-        <li class="feedback__users">
-          <img src="" alt="" class="feedback__faces" />
-        </li>
-        <li class="feedback__users">
-          <img src="" alt="" class="feedback__faces" />
-        </li>
-        <li class="feedback__users">
-          <img src="" alt="" class="feedback__faces" />
-        </li>
-        <li class="feedback__users">
-          <img src="" alt="" class="feedback__faces" />
-        </li>
-        <li class="feedback__users">
-          <img src="" alt="" class="feedback__faces" />
-        </li>
-        <li class="feedback__users">
-          <img src="" alt="" class="feedback__faces" />
-        </li>
-        <li class="feedback__users">
-          <img src="" alt="" class="feedback__faces" />
-        </li>
-      </ul>
     </div>
+    <svg class="feedback__arrowr">
+      <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-arrow"></use>
+    </svg>
+
+    <ul class="feedback__images">
+      <li class="feedback__users">
+        <img src="data:image/jpeg;base64,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" alt="" class="feedback__faces" />
+      </li>
+      <li class="feedback__users">
+        <img src="/HellEn/assets/outdor-women-45fade6d.jpg" alt="" class="feedback__faces" />
+      </li>
+      <li class="feedback__users">
+        <img src="/HellEn/assets/side-women-a95bb58a.jpg" alt="" class="feedback__faces" />
+      </li>
+      <li class="feedback__users">
+        <img src="/HellEn/assets/blond-women-e256a3c7.jpg" alt="" class="feedback__faces" />
+      </li>
+      <li class="feedback__users">
+        <img src="/HellEn/assets/dark-women-cd732fe8.jpg" alt="" class="feedback__faces" />
+      </li>
+      <li class="feedback__users">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAgICAgJCAkKCgkNDgwODRMREBARExwUFhQWFBwrGx8bGx8bKyYuJSMlLiZENS8vNUROQj5CTl9VVV93cXecnNEBCAgICAkICQoKCQ0ODA4NExEQEBETHBQWFBYUHCsbHxsbHxsrJi4lIyUuJkQ1Ly81RE5CPkJOX1VVX3dxd5yc0f/CABEIADYANgMBIgACEQEDEQH/xAAzAAACAwEBAQAAAAAAAAAAAAAABwQFBgMIAgEBAQEBAAMAAAAAAAAAAAAABAMFBgABAv/aAAwDAQACEAMQAAAAf8PJpA92+jNKvItdzn8SPhIXOVZ9z8tyZWlzW5jI9aP2/jJg792RsSAYe9efDhWFRJmnmsJfiw3fPSWgwRjFDd68KyVUMOT6nUMAOhwZIDQ//8QALhAAAgEDAwIFAwMFAAAAAAAAAQIDBAURAAYSIUEHEzFRYRAjcSIyoRSBgpKx/9oACAEBAAE/ANPWTTco6ALxBw1Q3Vcjsg763pf4rBSpyV62vmBMccrkRjtyZV0d47sSV5fMpDkH9ApogB+CFB14fb9rb3US26dxBWKhkiwS0UoHqCrkkHVFcvOfyJ4xFPjIXOVcDuh+m+972/bzUNLOssgnJMyw45+Xqm3Rf7vuZKqjrXhUVHKGEs5iKBjwjKDW/bjVm82+TgtRP9yN4wCVZlwoAGpZpVqWRUBQNjI6/wA51TXCrs19gr6JuEsMgdf79CDo+Le1al0impa+D3l4KTGw1tzcFDfbUlXTT8xkoxA45I+Dre9zjuu7bh58j4EqxxEdgNeGlEtXfhKTkQIH/wBWBGri9U26jTNIIm8ySWMg4OUQkYYEY1GRG3mu6hcfjTz+ZUO/Yk41LBK0sp4jBU9ca8I70bZPcqSYfbZOf+QOquN1rapHhlcmVzgP89h11s6SKJrrMqOjCmAw2P41u52Ny5ZwyKBkakINMrH9xGoYw3X21T2tZYI3EROVAJ45BHr21YbZLFXyOowTCxI9P3MNb3iq7beK2LAemmTnCHUNx5Hl0J6gDVjleltDzVNQSkj/AGuRZugYBcB+oBIIA1cCbxdJzEFTMhbgzeir0GWPc6rqd4eAyCvYggqc+xHTRp3jCvwOWjLD5y3Hp8HVveaGlAHqirkcsZ7a8O7c1X/XV1TF9vJjQHW6tsw3ygEa/pqIusT/APV1uhJqWyRpB1mhQQ4YY48QZHLA+wXVoeaWZ4oIXnq5n9MFhj5+B30bHSxW6jatyZWUTKR1BePJIPuPRdG3o9BUM/ISx4mLMSfMGU44J9CAwGtu2WtvE5p4oyqccPJjpGNUFFBQUUNJAuIo1x+T9L7tq2XyCSKqjIZlK+Yh4tg6o/D2Las9dOlQKmKdPLXn0dBqvpVr2t1OjERwjDhu5IIOMfLaothSVnOatrQKaQgiGL2UjA/jVFbqK3wLBSQLFGB6D6f/xAAoEQACAQMCBQMFAAAAAAAAAAABAgMABBESIQUTIkFhEDEyUoGR0fH/2gAIAQIBAT8Ad8k7kIvyIqFoZk1iJdJJwSMkgHG9aQBmPY/T2P6pWDKGFXMmjh0jD35Y/LVaJi3gI7ooosqmrziNxb3DJEoK7H7muI9ESW+kASSYz4qWaKz5KHwAoqOaORJCw74/lRQqF6kXUdzTojrpdQRV87C9yDuDgVYxIIEcLuR6f//EACYRAAIBAwQBAwUAAAAAAAAAAAECAwAEIRESIjFCBVGBEFLB0eH/2gAIAQMBAT8AVdoXAMjdA9CmjeMBWlk3ADXQkAE5xTMd5WTI103eQ/dOpRipoRlrwgfeQBVzKRNMp8Mg+4oh3Gpqx9Ntrm2SSZiGyPgVZaSTLMSToOQ9j/ajV7wTHonJP4qSB0ZQp6FSzsX4O20YFJI8bbkYg1YxobdePYJ+avpZDM8e7iD19P/Z" alt="" class="feedback__faces" />
+      </li>
+      <li class="feedback__users">
+        <img src="/HellEn/assets/galasses-women-f89c5796.jpg" alt="" class="feedback__faces" />
+      </li>
+    </ul>
+    <svg class="feedback__arrowl">
+      <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-arrow"></use>
+    </svg>
   </div>
 </section>
 
