@@ -12,15 +12,15 @@
     letter-spacing: $text-spacing;
 }
 
-@mixin subtitle($height: 1.4) {
-    font-size: 30px;
+@mixin subtitle($height: 1.4, $sub-font:30px) {
+    font-size: $sub-font;
     font-weight: 700;
     line-height: $height;
     letter-spacing: 2.4px;
     text-transform: uppercase;
 }
 
-@mixin middle-text($middle-height: 1.4, $font-size:20px) {
+@mixin middle-text($middle-height: 1.4, $font-size: 20px) {
     font-size: $font-size;
     font-weight: 700;
     line-height: $middle-height;
