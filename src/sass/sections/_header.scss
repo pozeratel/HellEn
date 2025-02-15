@@ -1,9 +1,9 @@
 .header {
   background-color: $text-color;
 //   width: 1314px;
-//   height: 70px;
-  padding-top: 30px;
-  padding-bottom: 0px;
+  // height: 70px;
+  padding-top: 29px;
+  padding-bottom: 5px;
   display: flex;
   align-items: center;
 
@@ -39,6 +39,7 @@ display: flex;
     display: flex;
     align-items: center;
     gap: 34.94px;
+    padding-top: 11px;
   }
 
   &__item {
@@ -70,7 +71,7 @@ line-height: normal;
 letter-spacing: 1.96px;
 text-transform: uppercase;
 border: 2px solid $main-color;
-padding: 13px 22px;
+padding: 11px 22px;
 margin-left: 83px;
 transition: 0.3s;
   }
