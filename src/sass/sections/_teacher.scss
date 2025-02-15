@@ -1,0 +1,15 @@
+.teacher {
+  &__svg {
+    fill: #ff6b09;
+    width: 25px;
+  }
+  &__title {
+    color: #111518;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1, 23;
+    letter-spacing: 2.4px;
+  }
+}
