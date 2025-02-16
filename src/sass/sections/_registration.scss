@@ -59,9 +59,7 @@
 .register__button {
   border: 1px solid $main-color;
   background-color: $main-color;
-  color: $text-color;
-  height: 30px;
-  width: 300px; 
+  color: $text-color; 
   font-family: Montserrat;
   font-size: 14px;
   font-weight: 700; 
@@ -71,8 +69,6 @@
   align-items: center;
   justify-content: center;
   padding: 15px 20px;
-  width: 100%;
-  max-width: 300px;
   text-align: center;
   margin-top: 60px;
 }
