@@ -1,105 +1,147 @@
-.cards__box{
-padding-top: 250px;
-padding-bottom: 130px;
+.cards__box {
+  padding-top: 250px;
+  padding-bottom: 130px;
 }
-.cadrs__title{
-    color: #111518;
-    font-family: Montserrat;
-    font-size: 46px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 130%; /* 59.8px */
-    letter-spacing: 1.38px;
-    margin-bottom: 47px;
-}
+.cadrs__title {
+  color: $secondary-color;
+  font-family: Montserrat;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: 1.38px;
+  margin-bottom: 47px;
 
-.cards__svg{
-    fill: $main-color;
-    width: 55px;
-height: 55px;
-margin-top: 35px;
-margin-bottom: 28px;
-}
-
-.cards__list{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-.cards__item{
-    background:$text-color;
-    width: 380px;
-height: 396px;
-flex-shrink: 0;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px $unaссented-color;
+  @media screen and (max-width: 1024px) {
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    letter-spacing: 0.78px;
+  }
 
-    @media screen and (max-width: 767px){
-        width: 290px;
-height: 300px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
 
-    }
-
-    @media (max-width: 480px) {
-        
-            width: 100%;
-       
-    }
-    
+    font-size: 20px;
+    font-style: normal;
+    letter-spacing: 0.6px;
+  }
 }
 
-.cards__item:hover{
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    background-color: $main-color;
-    color: $text-color;
+.cards__svg {
+  fill: $main-color;
+  width: 55px;
+  height: 55px;
+  margin-top: 35px;
+  margin-bottom: 28px;
 }
 
-.cards__divider{
-    width: 20px;
-height: 2px;
-flex-shrink: 0;
-background-color: $main-color;
-margin-left: 182px;
+.cards__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.cards__info{
-    color: #B9B9B9;
-text-align: center;
-font-family: Montserrat;
-font-size: 18px;
+.cards__item {
+  background: $text-color;
+  width: 380px;
+  height: 396px;
+  flex-shrink: 0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px $unaссented-color;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  @media screen and (max-width: 1024px) {
+    width: 290px;
+    height: 300px;
+  }
+
+  @media (max-width: 767px) {
+    width: 258px
+  }
+}
+
+.cards__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  background-color: $main-color;
+  color: $text-color;
+}
+
+.cards__divider {
+  width: 20px;
+  height: 2px;
+  flex-shrink: 0;
+  background-color: $main-color;
+  margin-left: 182px;
+
+  @media screen and (max-width: 1024px) {
+    margin-left: 136px;
+  }
+
+  @media (max-width: 767px) {
+margin-left: 123px;
+  }
+}
+
+.cards__info {
+  color: #b9b9b9;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 1.44px;
+  margin-top: 14px;
+
+  @media screen and (max-width: 1024px) {
+  font-size: 12px;
+  font-style: normal;
+  line-height: 20px;
+  letter-spacing: 0.96px;
+  }
+  
+}
+
+.cards__name {
+  color: $secondary-color;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; 
+  letter-spacing: 1.6px;
+  padding-bottom: 15px;
+
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px; 
+    letter-spacing: 1.12px;
+  }
+
+  @media (max-width: 767px) {
+font-size: 14px;
 font-style: normal;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: 1.44px;
-margin-top: 14px;
-
-}
-
-.cards__name{
-    color: $secondary-color;
-text-align: center;
-font-family: Montserrat;
-font-size: 20px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px; /* 140% */
-letter-spacing: 1.6px;
-padding-bottom: 15px;
-
+line-height: 20px; 
+letter-spacing: 1.12px;
+  }
+ 
 }
 
 .cards__item:hover .cards__name,
 .cards__item:hover .cards__info {
-    color: $text-color;
+  color: $text-color;
 }
-.cards__item:hover .cards__divider{
-    background-color: $text-color;
+.cards__item:hover .cards__divider {
+  background-color: $text-color;
 }
-.cards__item:hover .cards__svg{
-    fill: $text-color;
+.cards__item:hover .cards__svg {
+  fill: $text-color;
 }
