@@ -20,6 +20,7 @@
     line-height: normal;
     letter-spacing: 1.04px;
     padding-right: 143px;
+    margin-bottom: 10px;
 
     &::after{
     content: "HELLISH ENGLISH";
@@ -39,7 +40,7 @@ display: flex;
     display: flex;
     align-items: center;
     gap: 34.94px;
-    padding-top: 11px;
+    padding-top: 19px;
   }
 
   &__item {
@@ -71,7 +72,7 @@ line-height: normal;
 letter-spacing: 1.96px;
 text-transform: uppercase;
 border: 2px solid $main-color;
-padding: 11px 22px;
+padding: 17px 32px;
 margin-left: 83px;
 transition: 0.3s;
   }
@@ -81,7 +82,6 @@ transition: 0.3s;
     color: $text-color;
   }
 
-  &__svg{
-    fill: $main-color;
-  }
+
 }
+

@@ -1,6 +1,10 @@
 .cards__box {
   padding-top: 250px;
   padding-bottom: 130px;
+  @media screen and (max-width: 767px) {
+   padding-top: 300px;
+  }
+
 }
 .cadrs__title {
   color: $secondary-color;
