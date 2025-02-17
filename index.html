@@ -22,7 +22,7 @@
     
     
     <script type="module" crossorigin src="/HellEn/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/HellEn/assets/index-55f675d6.css">
+    <link rel="stylesheet" href="/HellEn/assets/index-4e7417a0.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -34,16 +34,39 @@
           <use href="../img/symbol-defs.svg#fire"></use></svg></span
       >En</a
     > -->
-    <a href="#" class="header__logo">HellEn</a>
+    <a href="#" class="header__logo"
+      >Hell<span
+        ><svg class="header__svg">
+          <use href="../img/symbol-defs.svg#icon-campfire"></use></svg></span
+      >En</a
+    >
     <nav class="header__nav">
       <ul class="header__list">
         <li><a href="#" class="header__item">Studying program</a></li>
         <li><a href="#" class="header__item">about</a></li>
         <li><a href="#" class="header__item">training options</a></li>
         <li><a href="#" class="header__item">contacts</a></li>
-        <li><a href="tel:+123456789" class="header__button">CONSULTATION BY PHONE</a></li>
+        <li class="header__item">
+          <a href="tel:+123456789" class="header__button"
+            >CONSULTATION BY PHONE</a
+          >
+        </li>
+        <li>
+          <button data-modal-header-open class="header__menu" type="button">
+            <svg class="header__svg-menu">
+              <use href="../img/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </li>
       </ul>
-     
+
+      <div  data-header-modal class="menu is-hidden">
+        <button data-modal-header-close class="menu__btn" type="button">
+          <svg class="menu__svg">
+            <use href="../img/symbol-defs.svg#icon-close_btn"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
 </header>
@@ -62,19 +85,19 @@
     <ul class="hero__list">
       <li class="hero__item">
         <svg class="hero__svg">
-          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-female-student-1"></use>
+          <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-female-student-1"></use>
         </svg>
         <p class="hero__bottom__text">Adapted author's UPE program</p>
       </li>
       <li class="hero__item">
         <svg class="hero__svg">
-          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-mobile-learning-1"></use>
+          <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-mobile-learning-1"></use>
         </svg>
         <p class="hero__bottom__text">Modern teaching methods</p>
       </li>
       <li class="hero__item">
         <svg class="hero__svg">
-          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-insurance"></use>
+          <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-insurance"></use>
         </svg>
         <p class="hero__bottom__text">Financial guarantee the result</p>
       </li>
@@ -123,7 +146,7 @@
   <div>
     <ul class="cards__list">
       <li class="cards__item">
-        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-study-program"></use></svg>
+        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-study-program"></use></svg>
         <h1 class="cards__name">Adapted program preparation for UPE</h1>
         <div class="cards__divider"></div>
         <p class="cards__info">
@@ -133,7 +156,7 @@
       </li>
 
       <li class="cards__item">
-        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-mobile-learning"></use></svg>
+        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-mobile-learning"></use></svg>
         <h1 class="cards__name">Classroom and online learning</h1>
         <div class="cards__divider"></div>
         <p class="cards__info">
@@ -143,7 +166,7 @@
       </li>
 
       <li class="cards__item">
-        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-open-book"></use></svg>
+        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-open-book"></use></svg>
         <h1 class="cards__name">The habit of reading in English</h1>
         <div class="cards__divider"></div>
         <p class="cards__info">
@@ -153,7 +176,7 @@
       </li>
 
       <li class="cards__item">
-        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-union"></use></svg>
+        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-union"></use></svg>
         <h1 class="cards__name">Psychological support</h1>
         <div class="cards__divider"></div>
         <p class="cards__info">
@@ -163,7 +186,7 @@
       </li>
 
       <li class="cards__item">
-        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-female-student"></use></svg>
+        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-female-student"></use></svg>
         <h1 class="cards__name">Training on copyright manuals</h1>
         <div class="cards__divider"></div>
         <p class="cards__info">
@@ -173,7 +196,7 @@
       </li>
 
       <li class="cards__item">
-        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-audio-book"></use></svg>
+        <svg class="cards__svg"><use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-audio-book"></use></svg>
         <h1 class="cards__name">Ability to comprehend spoken English</h1>
         <div class="cards__divider"></div>
         <p class="cards__info">
@@ -378,7 +401,7 @@
     <ul class="guarantee__list">
       <li class="guarantee__item">
         <svg class="guarantee__svg">
-          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-campfire"></use>
+          <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-campfire"></use>
         </svg>
         <p class="guarantee__text">
           You will pass the UPE with at least 25 points better than on the first
@@ -390,7 +413,7 @@
       </li>
       <li class="guarantee__item">
         <svg class="guarantee__svg">
-          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-campfire"></use>
+          <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-campfire"></use>
         </svg>
         <p class="guarantee__text">
           You will learn to write essays with at least 10 points out of 14.
@@ -401,7 +424,7 @@
       </li>
       <li class="guarantee__item">
         <svg class="guarantee__svg">
-          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-campfire"></use>
+          <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-campfire"></use>
         </svg>
         <p class="guarantee__text">
           You will study in your area. We will choose the location for the
@@ -410,7 +433,7 @@
       </li>
       <li class="guarantee__item">
         <svg class="guarantee__svg">
-          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-campfire"></use>
+          <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-campfire"></use>
         </svg>
         <p class="guarantee__text">
           Teams will be formed based on the starting level of the students. We
@@ -428,7 +451,7 @@
       <div class="feedback__main">
         <img src="/HellEn/assets/galasses-women-f89c5796.jpg" alt="" class="feedback__img" />
         <svg class="feedback__facebook">
-          <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-facebook"></use>
+          <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-facebook"></use>
         </svg>
       </div>
       <div class="feedback__text">
@@ -449,7 +472,7 @@
       </div>
     </div>
     <svg class="feedback__arrowr">
-      <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-arrow"></use>
+      <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-arrow"></use>
     </svg>
 
     <ul class="feedback__images">
@@ -476,7 +499,7 @@
       </li>
     </ul>
     <svg class="feedback__arrowl">
-      <use href="/HellEn/assets/symbol-defs-ae32bff7.svg#icon-arrow"></use>
+      <use href="/HellEn/assets/symbol-defs-4a0b0246.svg#icon-arrow"></use>
     </svg>
   </div>
 </section>
