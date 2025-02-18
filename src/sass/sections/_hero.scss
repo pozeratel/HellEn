@@ -92,6 +92,10 @@
 
     @media screen and (min-width: 1344px) {
       font-size: 14px;
+      padding-left: 70px;
+      padding-right: 70px;
+      padding-top: 26px;
+      padding-bottom: 26px;
     }
   }
 
@@ -105,6 +109,23 @@
     letter-spacing: 1.6px;
     width: 239px;
     height: 66px;
+
+    @media screen and (min-width: 708px) {
+      width: 146px;
+      font-size: 14px;
+    }
+
+    @media screen and (min-width: 1344px) {
+      color: #111518;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 1.64; /* 32.98px */
+      letter-spacing: 1.6px;
+      width: 239px;
+      height: 66px;
+    }
   }
 
   &__bg {
@@ -123,24 +144,41 @@
     height: 48px;
     width: 42px;
     border: #ff6b09 solid 2px;
-    padding: 9px;
+    padding: 24px;
+
+    @media screen and (min-width: 708px) {
+      padding-top: 9px;
+      padding-bottom: 9px;
+      padding-right: 9px;
+      padding-left: 12px;
+    }
+
+    @media screen and (min-width: 1344px) {
+      fill: #ff6b09;
+      height: 48px;
+      width: 42px;
+      border: #ff6b09 solid 2px;
+      padding: 24px;
+    }
   }
 
   &__item {
     display: flex;
     gap: 8px;
+    // border: #111518 solid 2px;
+    align-items: center;
   }
 
   &__list {
     display: flex;
     gap: 31px;
-    justify-content: center;
 
     @media screen and (min-width: 708px) {
-      width: 370px;
+      gap: 22px;
     }
 
     @media screen and (min-width: 1344px) {
+      display: flex;
       gap: 31px;
     }
   }
@@ -149,9 +187,29 @@
     display: flex;
     gap: 50px;
     margin-bottom: 130px;
+
+    @media screen and (min-width: 708px) {
+      margin-bottom: 74px;
+    }
+
+    @media screen and (min-width: 1344px) {
+      margin-bottom: 130px;
+    }
   }
   &__box {
-    padding-bottom: 132px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (min-width: 708px) {
+      padding-bottom: 75px;
+    }
+
+    @media screen and (min-width: 1344px) {
+      padding-bottom: 132px;
+    }
   }
 
   &__div2 {
