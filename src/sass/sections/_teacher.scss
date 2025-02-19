@@ -1,0 +1,60 @@
+.teacher {
+  &__svg {
+    fill: #ff6b09;
+    width: 25px;
+  }
+  &__title {
+    color: #111518;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1, 23;
+    letter-spacing: 2.4px;
+  }
+
+  &__work__title {
+    color: #111518;
+    font-family: Montserrat;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 1.23; /* 59.8px */
+    letter-spacing: 1.38px;
+  }
+
+  &__item__text {
+    color: #111518;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    letter-spacing: 0.96px;
+    width: 530px;
+  }
+
+  &__item__grant {
+    color: #b9b9b9;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.55; /* 155.556% */
+  }
+
+  &__link {
+    color: #ff6b09;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.55; /* 155.556% */
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+  }
+}

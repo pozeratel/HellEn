@@ -6,16 +6,39 @@
           <use href="../img/symbol-defs.svg#fire"></use></svg></span
       >En</a
     > -->
-    <a href="#" class="header__logo">HellEn</a>
+    <a href="#" class="header__logo"
+      >Hell<span
+        ><svg class="header__svg">
+          <use href="../img/symbol-defs.svg#icon-campfire"></use></svg></span
+      >En</a
+    >
     <nav class="header__nav">
       <ul class="header__list">
         <li><a href="#" class="header__item">Studying program</a></li>
-        <li><a href="#" class="header__item">Studying program</a></li>
+        <li><a href="#" class="header__item">about</a></li>
         <li><a href="#" class="header__item">training options</a></li>
         <li><a href="#" class="header__item">contacts</a></li>
-        <a href="tel:+123456789" class="header__button">CONSULTATION BY PHONE</a>
+        <li class="header__item">
+          <a href="tel:+123456789" class="header__button"
+            >CONSULTATION BY PHONE</a
+          >
+        </li>
+        <li>
+          <button data-modal-header-open class="header__menu" type="button">
+            <svg class="header__svg-menu">
+              <use href="../img/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </li>
       </ul>
-     
+
+      <div  data-header-modal class="menu is-hidden">
+        <button data-modal-header-close class="menu__btn" type="button">
+          <svg class="menu__svg">
+            <use href="../img/symbol-defs.svg#icon-close_btn"></use>
+          </svg>
+        </button>
+      </div>
     </nav>
   </div>
 </header>

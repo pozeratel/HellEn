@@ -1,0 +1,142 @@
+.register {
+  position: relative;
+  background-image: url('../../img/registration-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reg__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.register__box {
+  position: relative;
+  z-index: 1;
+  height: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: $text-color;
+
+  @media screen and (max-width: 1024px) {
+    height: 520px;
+  }
+}
+
+.register__span {
+  color: $main-color;
+}
+
+.register__title {
+  color: $text-color;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 46px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 130%;
+  letter-spacing: 1.38px;
+  margin-top: 20px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 26px;
+    font-style: normal;
+    letter-spacing: 0.78px;
+    margin-top: 60px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 0.42px;
+  }
+}
+
+.register__text {
+  color: $text-color;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.4px;
+  margin-bottom: 56px;
+  margin-top: 50px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.28px;
+    margin-bottom: 37px;
+    margin-top: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.96px;
+  }
+}
+
+.register__button {
+  border: 1px solid $main-color;
+  background-color: $main-color;
+  color: $text-color;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.96px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 26px 71px;
+  text-align: center;
+  margin-top: 60px;
+
+  @media screen and (max-width: 1024px) {
+    padding: 19px 60px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 15px 30px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.96px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+}
+
+.register__input {
+  width: 454px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid $text-color;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: $text-color;
+  margin-bottom: 20px;
+  @media screen and (max-width: 1024px) {
+    width: 390px;
+    height: 30px;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 230px;
+    height: 30px;
+  }
+}
