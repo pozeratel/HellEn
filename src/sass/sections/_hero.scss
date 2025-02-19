@@ -12,8 +12,7 @@
     font-weight: 800;
     line-height: 1.3; /* 75.4px */
     letter-spacing: 1.74px;
-
-    width: 530px;
+    width: 280px;
 
     margin-bottom: 15px;
 
@@ -24,6 +23,7 @@
 
     @media screen and (min-width: 1344px) {
       font-size: 58px;
+      width: 530px;
     }
   }
 
@@ -49,11 +49,12 @@
   &__text__span {
     color: #111518;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.65;
     letter-spacing: 1.6px;
+    width: 280px;
 
     @media screen and (min-width: 708px) {
       font-size: 14px;
@@ -68,22 +69,22 @@
   &__link {
     margin-top: 45px;
     background-color: #ff6b09;
-    padding-left: 70px;
-    padding-right: 70px;
-    padding-top: 26px;
-    padding-bottom: 26px;
+
     text-align: center;
     border: none;
 
     color: #fff;
     text-align: center;
     font-family: Montserrat;
-    font-size: 14px;
+
     font-style: normal;
     font-weight: 700;
     line-height: 1.21;
     letter-spacing: 1.96px;
     text-transform: uppercase;
+
+    font-size: 12px;
+    padding: 14px 36px;
 
     @media screen and (min-width: 708px) {
       font-size: 12px;
@@ -102,12 +103,12 @@
   &__bottom__text {
     color: #111518;
     font-family: Montserrat;
-    font-size: 20px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.64; /* 32.98px */
     letter-spacing: 1.6px;
-    width: 239px;
+    width: 147px;
     height: 66px;
 
     @media screen and (min-width: 708px) {
@@ -144,7 +145,10 @@
     height: 48px;
     width: 42px;
     border: #ff6b09 solid 2px;
-    padding: 24px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 9px;
+    padding-left: 12px;
 
     @media screen and (min-width: 708px) {
       padding-top: 9px;
@@ -171,10 +175,12 @@
 
   &__list {
     display: flex;
-    gap: 31px;
+    flex-direction: column;
+    gap: 30px;
 
     @media screen and (min-width: 708px) {
       gap: 22px;
+      flex-direction: row;
     }
 
     @media screen and (min-width: 1344px) {
@@ -185,14 +191,22 @@
 
   &__div {
     display: flex;
-    gap: 50px;
-    margin-bottom: 130px;
+    flex-direction: column;
+    margin-bottom: 70px;
+    gap: 54px;
+    align-items: center;
 
     @media screen and (min-width: 708px) {
       margin-bottom: 74px;
+      display: flex;
+      flex-direction: row;
+      gap: 18px;
     }
 
     @media screen and (min-width: 1344px) {
+      display: flex;
+      gap: 50px;
+      margin-bottom: 130px;
       margin-bottom: 130px;
     }
   }
