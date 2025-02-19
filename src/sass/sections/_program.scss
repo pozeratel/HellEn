@@ -1,0 +1,275 @@
+.program {
+    padding: 50px 0 380px 0;
+    background-color: $secondary-color;
+    position: static;
+
+    @media screen and (min-width:708px) {
+        padding: 60px  0 168px 0;
+    }
+
+    @media screen and (min-width:1344px) {
+        padding: 120px 0 326px 0;
+    }
+
+    &__poz {
+        position: relative;
+
+    }
+
+
+    &__list::before {
+        content: "";
+        display: block;
+        background-color: $text-color;
+        position: absolute;
+        top: 514px;
+        left: -554px;
+        width: 343%;
+        height: 4px;
+        transform: rotate(90deg);
+
+        @media screen and (min-width:708px) {
+            top: 340px;
+            left: -372px;
+            width: 95%;
+            height: 4px;
+        }
+
+        @media screen and (min-width:1344px) {
+            top: 80px;
+            width: 1000%;
+            transform: rotate(0deg);
+        }
+    }
+
+    &__item::before {
+        content: "";
+        width: 16px;
+        height: 16px;
+        background-color: $main-color;
+        border-radius: 50%;
+        position: absolute;
+        top: auto;
+        left: -48px;
+
+        @media screen and (min-width:708px) {
+            top: auto;
+            left: -43px;
+        }
+
+        @media screen and (min-width:1344px) {
+            top: 74px;
+            left: auto;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 46px;
+        width: 100%;
+        position: relative;
+
+        @media screen and (min-width:708px) {
+            margin-left: 50px;
+        }
+
+        @media screen and (min-width:1344px) {
+            position: static;
+            flex-direction: row;
+            margin-left: 0;
+        }
+    }
+
+    &__items {
+
+        display: flex;
+        flex-direction: column;
+
+        @media screen and (min-width:708px) {
+            flex-direction: row;
+            gap: 50px;
+        }
+
+
+        @media screen and (min-width:1344px) {
+            display: block;
+            gap: 0;
+        }
+
+    }
+
+    &__title {
+        color: $text-color;
+        @include titles($font: 20px);
+        margin-bottom: 30px;
+
+        @media screen and (min-width:708px) {
+            @include titles($font: 26px);
+        }
+
+        @media screen and (min-width:1344px) {
+            color: $text-color;
+            @include titles();
+            margin-bottom: 58px;
+        }
+    }
+
+    // &__br{
+    //     display: none;
+    // }
+
+    &__name {
+        color: $text-color;
+
+        @include middle-text($font-size: 14px);
+
+        @media screen and (min-width:1344px) {
+            @include middle-text();
+            margin-bottom: 25px;
+        }
+    }
+
+    &__span {
+        @include subtitle($sub-font: 14px);
+
+        @media screen and (min-width:1344px) {
+            @include subtitle();
+        }
+    }
+
+    &__label {
+        color: $main-color;
+        @include middle_text($font-size: 14px);
+        margin-bottom: 10px;
+
+        @media screen and (min-width:1344px) {
+            @include middle_text();
+            margin-bottom: 10px;
+        }
+    }
+
+    &__desc {
+        color: $unaссented-color;
+        @include text($text-size: 12px);
+        opacity: 0.5;
+        margin-bottom: 8px;
+
+
+        @media screen and (min-width:1344px) {
+            @include text();
+            margin-bottom: 25px;
+        }
+    }
+
+    &__img {
+        width: 120px;
+        height: 137px;
+        opacity: 0.5;
+        position: absolute;
+        right: -10px;
+        top: 1060px;
+
+        @media screen and (min-width:708px) {
+            width: 374px;
+            height: 273px;
+            right: 37px;
+            top: 580px;
+        }
+
+        @media screen and (min-width:1344px) {
+            width: 672px;
+            height: 502px;
+            left: -150px;
+            top: 430px;
+        }
+
+    }
+
+    &__box {
+        width: 176px;
+
+        @media screen and (min-width:708px) {
+            width: 150px;
+        }
+
+        @media screen and (min-width:1344px) {
+            width: 226px;
+        }
+    }
+
+    &__choose {
+        color: $text-color;
+        @include titles($font: 20px);
+        margin-bottom: 30px;
+        margin-top: 70px;
+        text-align: start;
+        width: 180px;
+
+        @media screen and (min-width:708px) {
+            @include titles($font: 26px);
+            margin-top: 172px;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media screen and (min-width:1344px) {
+            display: none;
+        }
+    }
+
+    &__wrap {
+        padding: 35px 22px;
+        background-color: $text-color;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        top: 1294px;
+        left: 0;
+        right: 0;
+
+        @media screen and (min-width:708px) {
+            top: 1044px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 40px 98px;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (min-width:1344px) {
+
+            gap: 40px;
+            top: 720px;
+            padding: 67px 113px;
+        }
+    }
+
+    &__number {
+        color: $main-color;
+        @include middle-text($font-size: 14px);
+        margin-bottom: 10px;
+
+        @media screen and (min-width:1344px) {
+            @include middle-text();
+        }
+    }
+
+    &__lesons {
+        color: $secondary-color;
+        @include middle-text($font-size: 14px, $middle-space: 1.12px);
+        // margin-bottom: 30px;
+        width: 216px;
+
+        @media screen and (min-width:708px) {
+            width: 236px;
+        }
+
+        @media screen and (min-width:1344px) {
+            @include middle-text();
+            width: 336px;
+        }
+    }
+}
