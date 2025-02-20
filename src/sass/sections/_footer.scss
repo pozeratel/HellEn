@@ -3,9 +3,9 @@
   background-size: 150px;
   background-position: bottom;
   &__box {
-    padding-top: 57px;
+    padding-top: 29px;
     margin-bottom: 0px;
-    height: 150px;
+    height: 194px;
 
     @media screen and (min-width: 708px) {
       height: 135px;
@@ -25,6 +25,25 @@
     font-style: normal;
     font-weight: 500;
     line-height: 2; /* 200% */
+    text-align: center;
+
+    @media screen and (min-width: 708px) {
+      color: #b9b9b9;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2; /* 200% */
+    }
+
+    @media screen and (min-width: 1344px) {
+      color: #b9b9b9;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 2; /* 200% */
+    }
   }
 
   &__logo {
@@ -46,17 +65,21 @@
   }
 
   &__svg__phone {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     fill: #ff6b09;
     margin-right: 30px;
 
     @media screen and (min-width: 708px) {
       margin-right: 20px;
+      width: 24px;
+      height: 24px;
     }
 
     @media screen and (min-width: 1344px) {
       margin-right: 30px;
+      width: 24px;
+      height: 24px;
     }
   }
 
@@ -64,14 +87,11 @@
     width: 40px;
     height: 40px;
     fill: #0c0c0c;
-    margin-left: 56px;
 
     @media screen and (min-width: 708px) {
-      margin-left: 40px;
     }
 
     @media screen and (min-width: 1344px) {
-      margin-left: 56px;
     }
   }
 
@@ -79,11 +99,32 @@
     color: #111518;
     text-align: center;
     font-family: Montserrat;
-    font-size: 30px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.23;
     letter-spacing: 2.4px;
+
+    @media screen and (min-width: 708px) {
+      color: #111518;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.23;
+      letter-spacing: 1.6px;
+    }
+
+    @media screen and (min-width: 1344px) {
+      color: #111518;
+      text-align: center;
+      font-family: Montserrat;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.23;
+      letter-spacing: 2.4px;
+    }
   }
 
   &__down__logo {
@@ -104,23 +145,44 @@
   &__upbox {
     display: flex;
     // justify-content: space-between;
-    gap: 290px;
+    gap: 23px;
     // margin-bottom: 53px;
-
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     @media screen and (min-width: 708px) {
       justify-content: space-between;
       gap: 0;
+      flex-direction: row;
     }
 
     @media screen and (min-width: 1344px) {
       gap: 290px;
+      justify-content: start;
+      flex-direction: row;
     }
   }
 
   &__contacts {
     display: flex;
     align-items: center;
-    // border: #111518 3px solid;
+
+    flex-direction: column;
+    gap: 30px;
+
+    @media screen and (min-width: 708px) {
+      display: flex;
+      align-items: center;
+
+      flex-direction: row;
+      gap: 40px;
+    }
+
+    @media screen and (min-width: 1344px) {
+      display: flex;
+      align-items: center;
+      gap: 56px;
+    }
   }
 
   &__rights__bg {
@@ -133,5 +195,22 @@
     height: 67px;
     display: flex;
     align-items: center;
+    justify-content: center;
+
+    @media screen and (min-width: 708px) {
+      margin-top: 0;
+      height: 67px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
+
+    @media screen and (min-width: 1344px) {
+      margin-top: 0;
+      height: 67px;
+      display: flex;
+      align-items: center;
+      justify-content: start;
+    }
   }
 }
