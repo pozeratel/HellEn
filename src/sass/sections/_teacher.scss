@@ -1,7 +1,18 @@
 .teacher {
+  margin-top: 324px;
+  &__box {
+    display: flex;
+
+    gap: 60px;
+  }
+  &__listsname {
+    width: 642px;
+    margin-top: 107px;
+  }
   &__svg {
     fill: #ff6b09;
     width: 25px;
+    height: 20px;
   }
   &__title {
     color: #111518;
@@ -11,6 +22,17 @@
     font-weight: 800;
     line-height: 1, 23;
     letter-spacing: 2.4px;
+    margin-bottom: 15px;
+  }
+
+  &__line {
+    margin-bottom: 30px;
+  }
+
+  &__imgbg {
+    border: #ff6b09 solid 2px;
+    width: 530px;
+    height: 668px;
   }
 
   &__work__title {
@@ -21,6 +43,7 @@
     font-weight: 800;
     line-height: 1.23; /* 59.8px */
     letter-spacing: 1.38px;
+    margin-bottom: 50px;
   }
 
   &__item__text {
@@ -33,6 +56,12 @@
     letter-spacing: 0.96px;
     width: 530px;
   }
+  &__list__grant {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-bottom: 22px;
+  }
 
   &__item__grant {
     color: #b9b9b9;
@@ -41,6 +70,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 1.55; /* 155.556% */
+    width: 641px;
   }
 
   &__link {
@@ -56,5 +86,23 @@
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 43px;
+  }
+
+  &__item {
+    display: flex;
+    gap: 34px;
+  }
+  &__miniline {
+    width: 20px;
+    height: 2px;
+    background-color: #ff6b09;
+
+    margin-bottom: 43px;
   }
 }
