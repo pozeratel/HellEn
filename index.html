@@ -22,7 +22,7 @@
     
     
     <script type="module" crossorigin src="/HellEn/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/HellEn/assets/index-28a4cb12.css">
+    <link rel="stylesheet" href="/HellEn/assets/index-83765920.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -60,12 +60,33 @@
         </li>
       </ul>
 
-      <div  data-header-modal class="menu is-hidden">
+      <div data-header-modal class="menu is-hidden">
+        <a href="#" class="menu__logo"
+          >Hell<span
+            ><svg class="header__svg">
+              <use
+                href="../img/symbol-defs.svg#icon-campfire"
+              ></use></svg></span
+          >En</a
+        >
         <button data-modal-header-close class="menu__btn" type="button">
           <svg class="menu__svg">
             <use href="../img/symbol-defs.svg#icon-close_btn"></use>
           </svg>
         </button>
+
+        <div class="menu__box">
+          <ul class="menu__list">
+            <li><a href="#" class="menu__item">Studying program</a></li>
+            <li><a href="#" class="menu__item">About</a></li>
+            <li><a href="#" class="menu__item">Training options</a></li>
+            <li><a href="#" class="menu__item">Contacts</a></li>
+          </ul>
+
+          <a href="tel:+123456789" class="menu__button"
+            >CONSULTATION BY PHONE</a
+          >
+        </div>
       </div>
     </nav>
   </div>
