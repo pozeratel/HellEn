@@ -12,7 +12,7 @@
   }
 
   &__logo {
-    color: #111518;
+    color: $secondary-color;
     font-size: 26px;
     font-style: normal;
     font-weight: 800;
@@ -31,14 +31,22 @@ line-height: normal;
 letter-spacing: 1.44px;
 text-transform: uppercase;
 display: flex;
+
+@media (max-width: 707px) {
+  font-size:5px;
+ 
+      }
+
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1344px) {
       margin-top: 10px;
     }
   
-    @media (max-width: 767px) {
- 
+    @media (max-width: 707px) {
+font-size: 17px;
+position: absolute;
+margin-bottom: 5px;
     }
   }
 
@@ -47,7 +55,7 @@ display: flex;
     align-items: center;
     gap: 34.94px;
     padding-top: 20px;
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1343px) {
       margin-bottom: 20px;
     }
    
@@ -70,7 +78,7 @@ display: flex;
     color: $main-color;
    }
 
-   @media (max-width: 767px) {
+   @media (max-width: 707px) {
     display: none;
        }
   }
@@ -91,7 +99,7 @@ padding: 15px 28px;
 margin-left: 83px;
 transition: 0.3s;
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1344px) {
   padding: 10px 10px;
   margin-left: -30px;
 }
@@ -109,19 +117,31 @@ transition: 0.3s;
 height: 20px;
 justify-content: center;
 margin-top: 10px
-}
+
+
+    }
   
 
 }
+.header__svg{
+  @media (max-width: 767px) {
+    width: 11px;
+    height: 14px;
+  
+       }
+}
+
 
 .header__menu{
   border: none;
   background-color: transparent;
 
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1344px) {
 display: none;
+
   }
 
+ 
 
     }
     
@@ -130,10 +150,20 @@ display: none;
  width: 25px;
 height: 25px;
 margin-left: -10px;
+
+@media (max-width: 707px) {
+  margin-left: 180px;
+     }
+
+     @media (max-width: 707px) {
+      margin-left: 120px;
+      width: 18px;
+      height: 18px;
+          }
 }
 
 .header__item:nth-child(1), .header__list:nth-child(2) .header__list:nth-child(3) .header__list:nth-child(4){
-  @media screen and (max-width: 1025px) {
+  @media screen and (max-width: 1344px) {
     display: none;
   }
 }
@@ -155,20 +185,110 @@ margin-left: -10px;
   z-index: 1;
 }
 
-.menu__btn{
-  border: none;
-  background-color: transparent;
-  
-  
- 
-}
 
-.menu__svg{
-  fill: $text-color;
-  width: 1px;
-  height: 14px;
-}
 .is-hidden{
   opacity: 0;
   pointer-events: none;
 }
+
+.menu__logo {
+  color: $text-color;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.04px;
+  margin-bottom: 1px;
+  margin-left: 110px;
+
+  
+
+  @media (max-width: 707px) {
+    margin-left: 10px;
+       }
+  }
+
+
+.menu__logo::after{
+  content: "HELLISH ENGLISH";
+  color: $main-color;
+font-size: 8px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: 1.44px;
+text-transform: uppercase;
+display: flex;
+  }
+
+  .menu__item{
+    color: $text-color;
+font-family: Montserrat;
+font-size: 26px;
+font-style: normal;
+font-weight: 800;
+line-height: 180%; 
+letter-spacing: 0.78px;
+margin-bottom: 10px;
+  }
+
+  .menu__item:hover{
+    color: $main-color;
+    transition: 0.3s;
+  }
+
+  .menu__svg{
+    position: relative;
+    width: 39px;
+    height: 39px;
+  }
+
+
+  .menu__btn{
+    border: none;
+    background-color: transparent;
+    fill: $text-color;
+  margin-top: -160px;
+   margin-left: 559px;
+  
+  }
+  
+  .menu__box{
+    text-align: center;
+
+    @media (max-width: 707px) {
+      text-align: left;
+         }
+    }
+  
+  .menu__list{
+    display:inline-block;
+position: relative;
+text-align: left;
+padding-bottom: 250px;
+// padding-left: 320px;
+
+  }
+
+  .menu__button{
+    color: $main-color;
+    // text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.96px;
+    text-transform: uppercase;
+    border: 2px solid $main-color;
+    padding: 15px 28px;
+    // margin-left: 83px;
+    transition: 0.3s;
+    flex-wrap: wrap;
+    @media (min-width: 708px) {
+      display: none;
+         }
+
+         
+    }
+  
