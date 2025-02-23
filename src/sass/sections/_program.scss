@@ -4,7 +4,7 @@
     position: static;
 
     @media screen and (min-width:708px) {
-        padding: 60px  0 168px 0;
+        padding: 60px 0 168px 0;
     }
 
     @media screen and (min-width:1344px) {
@@ -37,7 +37,7 @@
 
         @media screen and (min-width:1344px) {
             top: 80px;
-            width: 1000%;
+            width: 138.2%;
             transform: rotate(0deg);
         }
     }
@@ -228,6 +228,7 @@
         top: 1294px;
         left: 0;
         right: 0;
+        box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
 
         @media screen and (min-width:708px) {
             top: 1044px;
@@ -270,6 +271,16 @@
         @media screen and (min-width:1344px) {
             @include middle-text();
             width: 336px;
+        }
+    }
+
+    &__inp:nth-child(1) .program__lesons,
+    &__inp:nth-child(2) .program__lesons,
+    &__inp:nth-child(4) .program__lesons,
+    &__inp:nth-child(6) .program__lesons {
+
+        @media screen and (min-width:1344px) {
+            margin-bottom: 32px;
         }
     }
 }
