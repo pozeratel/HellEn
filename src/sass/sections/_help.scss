@@ -8,16 +8,17 @@
 
     @media screen and (min-width:1344px) {
         padding: 100px 0 280px 0;
-        background-image: url(../img/helpbg.jpg);
+        background-image: url(../../img/desktop/help-bg-desktop@1x.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../../img/desktop/help-bg-desktop@2x.jpg);
+        }
     }
-
-         @media (min-device-pixel-ratio: 2),
-         (min-resolution: 192dpi),
-         (min-resolution: 2dppx) {
-            background-image: url(../../img/desktop/);
-         }
-
-
 
     &__hp {
         position: relative;
@@ -64,6 +65,7 @@
         justify-content: center;
         padding: 20px 0;
         row-gap: 15px;
+        box-shadow: -5px 8px 26px 0px rgba(0, 0, 0, 0.04);
 
         @media screen and (min-width:708px) {
             padding: 28px 0;
@@ -110,18 +112,16 @@
 
     &__text {
         color: $secondary-color;
-        @include middle-text($font-size:14px);
+        @include middle-text($font-size: 14px);
         height: 40px;
+
         @media screen and (min-width:1344px) {
             @include middle-text($font-size: 20px);
             height: 56px;
         }
     }
 
-    .help__item:nth-child(1) .help__text,
-    .help__item:nth-child(4) .help__text,
-    .help__item:nth-child(6) .help__text {
-
+    &__text {
         @media screen and (min-width:1344px) {
             margin-bottom: 32px;
         }
