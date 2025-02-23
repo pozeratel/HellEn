@@ -22,7 +22,7 @@
     
     
     <script type="module" crossorigin src="/HellEn/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/HellEn/assets/index-1e1dfac2.css">
+    <link rel="stylesheet" href="/HellEn/assets/index-ec7af47d.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
@@ -37,7 +37,7 @@
     <a href="#" class="header__logo"
       >Hell<span
         ><svg class="header__svg">
-          <use href="../img/symbol-defs.svg#icon-campfire"></use></svg></span
+          <use href="/HellEn/assets/symbol-defs-edf46130.svg#icon-campfire"></use></svg></span
       >En</a
     >
     <nav class="header__nav">
@@ -54,39 +54,46 @@
         <li>
           <button data-modal-header-open class="header__menu" type="button">
             <svg class="header__svg-menu">
-              <use href="../img/symbol-defs.svg#icon-menu"></use>
+              <use href="/HellEn/assets/symbol-defs-edf46130.svg#icon-menu"></use>
             </svg>
           </button>
         </li>
       </ul>
 
       <div data-header-modal class="menu is-hidden">
-        <a href="#" class="menu__logo"
-          >Hell<span
-            ><svg class="header__svg">
-              <use
-                href="../img/symbol-defs.svg#icon-campfire"
-              ></use></svg></span
-          >En</a
-        >
-        <button data-modal-header-close class="menu__btn" type="button">
-          <svg class="menu__svg">
-            <use href="../img/symbol-defs.svg#icon-close_btn"></use>
-          </svg>
-        </button>
+        <!-- <div class="logo__box"> -->
+          <div class="menu__box">
+            <div>
+              <a href="#" class="menu__logo"
+                >Hell<span
+                  ><svg class="header__svg">
+                    <use
+                      href="/HellEn/assets/symbol-defs-edf46130.svg#icon-campfire"
+                    ></use></svg></span
+                >En</a
+              >
+              <p class="logo__text">HELLISH <span class="menu__span">ENGLISH</span></p>
+            </div>
 
-        <div class="menu__box">
+            <button data-modal-header-close class="menu__btn" type="button">
+              <svg class="menu__svg">
+                <use href="/HellEn/assets/symbol-defs-edf46130.svg#icon-close_btn"></use>
+              </svg>
+            </button>
+          </div>
+
           <ul class="menu__list">
             <li><a href="#" class="menu__item">Studying program</a></li>
             <li><a href="#" class="menu__item">About</a></li>
             <li><a href="#" class="menu__item">Training options</a></li>
             <li><a href="#" class="menu__item">Contacts</a></li>
+            <li class="btn__box"> <a href="tel:+123456789" class="menu__button"
+              >CONSULTATION BY PHONE</a
+            ></li>
           </ul>
 
-          <a href="tel:+123456789" class="menu__button"
-            >CONSULTATION BY PHONE</a
-          >
-        </div>
+         
+        <!-- </div> -->
       </div>
     </nav>
   </div>
