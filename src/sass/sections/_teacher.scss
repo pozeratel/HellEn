@@ -1,3 +1,7 @@
+//=======================
+//    SCSS TEACHER
+//   from -NIKITA-
+//=======================
 .teacher {
   margin-top: 324px;
   &__box {
@@ -208,6 +212,14 @@
     text-decoration-thickness: auto;
     text-underline-offset: auto;
     text-underline-position: from-font;
+
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
+    &:hover {
+      color: #ffb787;
+    }
 
     @media screen and (min-width: 708px) {
       color: #ff6b09;

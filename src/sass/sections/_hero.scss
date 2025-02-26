@@ -1,3 +1,7 @@
+//=======================
+//    SCSS TEACHER
+//   from -NIKITA-
+//=======================
 .hero {
   @media screen and (min-width: 708px) {
   }
@@ -86,6 +90,10 @@
     font-size: 12px;
     padding: 14px 36px;
 
+    transition-property: background-color, color, border-radius;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
+
     @media screen and (min-width: 708px) {
       font-size: 12px;
       padding: 14px 36px;
@@ -97,6 +105,13 @@
       padding-right: 70px;
       padding-top: 26px;
       padding-bottom: 26px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: #ff8e43;
+      color: #e6e6e6;
+      border-radius: 10px;
     }
   }
 
