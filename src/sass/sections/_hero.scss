@@ -141,6 +141,9 @@
       letter-spacing: 1.6px;
       width: 239px;
       height: 66px;
+      background-color: white;
+      position: absolute;
+      left: 80px;
     }
   }
 
@@ -151,7 +154,7 @@
     }
 
     @media screen and (min-width: 1344px) {
-      width: 842px;
+      width: 100%;
     }
   }
 
@@ -186,6 +189,7 @@
     gap: 8px;
     // border: #111518 solid 2px;
     align-items: center;
+    position: relative;
   }
 
   &__list {
@@ -200,7 +204,7 @@
 
     @media screen and (min-width: 1344px) {
       display: flex;
-      gap: 31px;
+      gap: 348px;
     }
   }
 
@@ -229,8 +233,8 @@
     padding-bottom: 75px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
 
     @media screen and (min-width: 708px) {
       padding-bottom: 75px;
