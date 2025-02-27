@@ -12,7 +12,7 @@
   letter-spacing: 1.38px;
   margin-bottom: 47px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1344px) {
     text-align: center;
     font-family: Montserrat;
     font-size: 26px;
@@ -54,7 +54,7 @@
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1344px) {
     width: 290px;
     height: 300px;
   }
@@ -78,7 +78,7 @@
   background-color: $main-color;
   margin-left: 182px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1344px) {
     margin-left: 136px;
   }
 
@@ -98,7 +98,7 @@ margin-left: 123px;
   letter-spacing: 1.44px;
   margin-top: 14px;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1344px) {
   font-size: 12px;
   font-style: normal;
   line-height: 20px;
@@ -119,7 +119,7 @@ margin-left: 123px;
   padding-bottom: 15px;
 
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1344px) {
     font-size: 14px;
     font-style: normal;
     line-height: 20px; 
