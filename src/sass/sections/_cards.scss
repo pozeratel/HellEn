@@ -33,14 +33,17 @@
   fill: $main-color;
   width: 55px;
   height: 55px;
-  margin-top: 35px;
+  margin-top: 55px;
   margin-bottom: 28px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .cards__list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  justify-content: space-between;
 }
 
 .cards__item {
@@ -53,6 +56,7 @@
   box-shadow: 0 4px 10px $unaссented-color;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
 
   @media screen and (max-width: 1344px) {
     width: 290px;
@@ -76,15 +80,8 @@
   height: 2px;
   flex-shrink: 0;
   background-color: $main-color;
-  margin-left: 182px;
-
-  @media screen and (max-width: 1344px) {
-    margin-left: 136px;
-  }
-
-  @media (max-width: 767px) {
-margin-left: 123px;
-  }
+  margin-left:auto ;
+  margin-right: auto;
 }
 
 .cards__info {
@@ -116,7 +113,7 @@ margin-left: 123px;
   font-weight: 700;
   line-height: 28px; 
   letter-spacing: 1.6px;
-  padding-bottom: 15px;
+  margin-bottom: 10px;
 
 
   @media screen and (max-width: 1344px) {

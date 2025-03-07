@@ -1,6 +1,6 @@
 .register {
   position: relative;
-  background-image: url('../../img/mobile/registration-bg-mobile@1x.webp');
+  background-image: url('../img/mobile/registration-bg-mobile@1x.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -8,27 +8,27 @@
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    background-image: url(../../img/mobile/registration-bg-mobile@2x.webp);
+    background-image: url(../img/mobile/registration-bg-mobile@2x.webp);
 }
 @media screen and (min-width: 768px){
-  background-image: url(../../img/tablet/registration-bg-tablet@1x\ .webp);
+  background-image: url(../img/tablet/registration-bg-tablet@1x\ .webp);
 
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../../img/tablet/registration-bg-tablet@2x.webp);
+      background-image: url(../img/tablet/registration-bg-tablet@2x.webp);
   }
 }
 
 @media screen and (min-width: 1200px){
-  background-image: url(../../img/desktop/registration-bg-desktop@1x.webp);
+  background-image: url(../img/desktop/registration-bg-desktop@1x.webp);
 
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-      background-image: url(../../img/desktop/registration-bg-desktop@2x.webp);
+      background-image: url(../img/desktop/registration-bg-desktop@2x.webp);
   }
 }
 }
