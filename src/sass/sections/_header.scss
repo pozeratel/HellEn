@@ -9,6 +9,8 @@
 
   &__box {
    display: flex;
+   justify-content: space-between;
+
   }
 
   &__logo {
@@ -18,30 +20,11 @@
     font-weight: 800;
     line-height: normal;
     letter-spacing: 1.04px;
-    padding-right: 143px;
-    padding-bottom: 10px;
+    // padding-right: 143px;
+    // padding-bottom: 10px;
+   
 
-    &::after{
-    content: "HELLISH ENGLISH";
-    color: $main-color;
-font-size: 8px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.44px;
-text-transform: uppercase;
-display: flex;
-
-@media (max-width: 707px) {
-  font-size:5px;
- 
-      }
-
-    }
-
-    @media screen and (max-width: 1344px) {
-      margin-top: 10px;
-    }
+   
   
     @media (max-width: 707px) {
 font-size: 17px;
@@ -54,9 +37,10 @@ margin-bottom: 5px;
     display: flex;
     align-items: center;
     gap: 34.94px;
-    padding-top: 20px;
+    margin-top: 17px;
     @media screen and (max-width: 1343px) {
       margin-bottom: 20px;
+      gap: 0px;
     }
    
 
@@ -95,13 +79,13 @@ line-height: normal;
 letter-spacing: 1.96px;
 text-transform: uppercase;
 border: 2px solid $main-color;
-padding: 15px 28px;
+padding: 13px 28px;
 margin-left: 83px;
 transition: 0.3s;
 
 @media screen and (max-width: 1344px) {
   padding: 10px 10px;
-  margin-left: -30px;
+  margin-right: 29px;
 }
 
   }
@@ -121,7 +105,35 @@ margin-top: 10px
 
     }
   
+    &___span2{
+      color: $main-color;
+    }
+}
 
+.logo__box2{
+  @media screen and (max-width: 1344px) {
+    margin-top: 8px;
+   }
+
+   @media (max-width: 707px) {
+   margin-top: 10px;
+        }
+}
+
+.logoh__text{
+  // color: $main-color;
+  font-size: 8px;
+  color: $main-color;
+  font-size: 8px;
+margin-bottom: 5px;
+  @media (max-width: 707px) {
+   font-size: 6px;
+
+
+       }
+       @media screen and (max-width: 1344px) {
+      margin-bottom: 3px;
+      }
 }
 .header__svg{
   @media (max-width: 767px) {
@@ -152,7 +164,7 @@ height: 25px;
 margin-left: -10px;
 
 @media (max-width: 707px) {
-  margin-left: 180px;
+  margin-left: 100px;
      }
 
      @media (max-width: 707px) {
@@ -279,8 +291,10 @@ margin-bottom: 39px;
     display: flex;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+  gap: 70px;
   @media (max-width: 707px) {
-    margin-right: 350px;
+    margin-right: 20px;
+    padding-right: 28px;
        }
   
   }
@@ -301,6 +315,7 @@ margin-bottom: 39px;
   // position: absolute;
   margin-left: auto;
   margin-right: auto;
+
      }
 
   }
