@@ -56,11 +56,16 @@ body {
   padding-top: 29px;
   padding-bottom: 5px;
   display: flex;
-  align-items: center;
 }
 .header__box {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+@media screen and (min-width: 708px) {
+  .header__box {
+    align-items: center;
+  }
 }
 .header__logo {
   color: #111518;
@@ -73,7 +78,6 @@ body {
 @media (max-width: 707px) {
   .header__logo {
     font-size: 17px;
-    position: absolute;
     margin-bottom: 5px;
   }
 }
@@ -141,24 +145,13 @@ body {
   justify-content: center;
   margin-top: 10px;
 }
-.header___span2 {
+.header__spann {
   color: #FF6B09;
-}
-
-@media screen and (max-width: 1344px) {
-  .logo__box2 {
-    margin-top: 8px;
-  }
-}
-@media (max-width: 707px) {
-  .logo__box2 {
-    margin-top: 10px;
-  }
 }
 
 .logoh__text {
   font-size: 8px;
-  color: #FF6B09;
+  color: #111518;
   font-size: 8px;
   margin-bottom: 5px;
 }
