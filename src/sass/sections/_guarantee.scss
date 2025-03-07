@@ -5,16 +5,16 @@
 .guarantee {
   &__box {
     padding-bottom: 45px;
-    margin-top: 70px;
+    padding-top: 70px;
 
     @media screen and (min-width: 708px) {
       padding-bottom: 30px;
-      margin-top: 70px;
+      padding-top: 70px;
     }
 
     @media screen and (min-width: 1344px) {
       padding-bottom: 45px;
-      margin-top: 129px;
+      padding-top: 129px;
     }
   }
   &__title {
