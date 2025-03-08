@@ -145,13 +145,16 @@
   }
 
   &__bg {
-    width: 208px;
+    width: 100%;
+    overflow: hidden;
     @media screen and (min-width: 708px) {
-      width: 370px;
+      width: 100%;
+      overflow: hidden;
     }
 
     @media screen and (min-width: 1344px) {
-      width: 842px;
+      width: 100%;
+      overflow: hidden;
     }
   }
 
@@ -230,7 +233,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     @media screen and (min-width: 708px) {
       padding-bottom: 75px;
