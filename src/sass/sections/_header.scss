@@ -5,12 +5,17 @@
   padding-top: 29px;
   padding-bottom: 5px;
   display: flex;
-  align-items: center;
+  // align-items: center;
+
 
   &__box {
    display: flex;
    justify-content: space-between;
+align-items: baseline;
 
+@media screen and (min-width: 708px){
+  align-items: center;
+}
   }
 
   &__logo {
@@ -28,7 +33,7 @@
   
     @media (max-width: 707px) {
 font-size: 17px;
-position: absolute;
+// position: absolute;
 margin-bottom: 5px;
     }
   }
@@ -105,25 +110,27 @@ margin-top: 10px
 
     }
   
-    &___span2{
+    &__spann{
       color: $main-color;
     }
 }
 
-.logo__box2{
-  @media screen and (max-width: 1344px) {
-    margin-top: 8px;
-   }
+// .logo__box2{
+//   margin-top: 10px;
 
-   @media (max-width: 707px) {
-   margin-top: 10px;
-        }
-}
+//   @media screen and (min-width: 708px) {
+//     margin-top: 8px;
+//    }
+
+ 
+  
+        
+// }
 
 .logoh__text{
   // color: $main-color;
   font-size: 8px;
-  color: $main-color;
+  color: $secondary-color;
   font-size: 8px;
 margin-bottom: 5px;
   @media (max-width: 707px) {
