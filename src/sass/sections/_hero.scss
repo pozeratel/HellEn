@@ -3,10 +3,13 @@
 //   from -NIKITA-
 //=======================
 .hero {
+  margin-bottom: 75px;
   @media screen and (min-width: 708px) {
+    margin-bottom: 75px;
   }
 
   @media screen and (min-width: 1344px) {
+    margin-bottom: 132px;
   }
   &__h1 {
     color: #111518;
@@ -116,6 +119,7 @@
   }
 
   &__bottom__text {
+    padding-left: 15px;
     color: #111518;
     font-family: Montserrat;
     font-size: 14px;
@@ -123,15 +127,27 @@
     font-weight: 700;
     line-height: 1.64; /* 32.98px */
     letter-spacing: 1.6px;
-    width: 147px;
-    height: 66px;
+    width: 100%;
+    height: 46px;
+    position: absolute;
+    left: 55px;
+    background-color: white;
 
     @media screen and (min-width: 708px) {
+      margin-left: 8px;
+      position: static;
       width: 146px;
+      height: 66px;
       font-size: 14px;
+      padding-left: 0px;
+      // left: 60px;
+
+      // padding-bottom: 5px;
+      // position: static;
     }
 
     @media screen and (min-width: 1344px) {
+      position: absolute;
       color: #111518;
       font-family: Montserrat;
       font-size: 20px;
@@ -141,6 +157,7 @@
       letter-spacing: 1.6px;
       width: 239px;
       height: 66px;
+      left: 80px;
     }
   }
 
@@ -186,24 +203,31 @@
 
   &__item {
     display: flex;
-    gap: 8px;
+    // gap: 8px;
     // border: #111518 solid 2px;
     align-items: center;
+    @media screen and (min-width: 1344px) {
+      position: relative;
+    }
   }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    position: relative;
+    width: 214px;
 
     @media screen and (min-width: 708px) {
-      gap: 22px;
       flex-direction: row;
+      gap: 22px;
+
+      position: relative;
     }
 
     @media screen and (min-width: 1344px) {
       display: flex;
-      gap: 31px;
+      gap: 348px;
     }
   }
 
@@ -229,18 +253,17 @@
     }
   }
   &__box {
-    padding-bottom: 75px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 
-    @media screen and (min-width: 708px) {
-      padding-bottom: 75px;
-    }
+    // @media screen and (min-width: 708px) {
+    //   padding-bottom: 75px;
+    // }
 
-    @media screen and (min-width: 1344px) {
-      padding-bottom: 132px;
-    }
+    // @media screen and (min-width: 1344px) {
+    //   padding-bottom: 132px;
+    // }
   }
 
   &__div2 {
