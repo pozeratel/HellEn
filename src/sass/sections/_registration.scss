@@ -126,6 +126,7 @@
   padding: 26px 71px;
   text-align: center;
   margin-top: 60px;
+  transition: 0.7s;
 
   @media screen and (max-width: 1024px) {
     padding: 19px 60px;
@@ -144,7 +145,12 @@
     margin-top: 15px;
   }
 }
-
+.register__button:hover{
+  background-color: $secondary-color;
+  color: $text-color;
+  border-radius: 80px;
+  transition: 0.9s;
+}
 .register__input {
   width: 454px;
   height: 40px;
