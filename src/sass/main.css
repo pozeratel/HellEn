@@ -27,7 +27,6 @@ img {
   max-width: 1344px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 1px solid red;
 }
 @media screen and (min-width: 300px) {
   .container {
@@ -51,16 +50,25 @@ body {
   font-family: Montserrat;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .header {
   background-color: #fff;
   padding-top: 29px;
   padding-bottom: 5px;
   display: flex;
-  align-items: center;
 }
 .header__box {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+}
+@media screen and (min-width: 708px) {
+  .header__box {
+    align-items: center;
+  }
 }
 .header__logo {
   color: #111518;
@@ -73,7 +81,6 @@ body {
 @media (max-width: 707px) {
   .header__logo {
     font-size: 17px;
-    position: absolute;
     margin-bottom: 5px;
   }
 }
@@ -81,11 +88,10 @@ body {
   display: flex;
   align-items: center;
   gap: 34.94px;
-  margin-top: 17px;
+  margin-top: 0px;
 }
 @media screen and (max-width: 1343px) {
   .header__list {
-    margin-bottom: 20px;
     gap: 0px;
   }
 }
@@ -141,24 +147,13 @@ body {
   justify-content: center;
   margin-top: 10px;
 }
-.header___span2 {
+.header__spann {
   color: #FF6B09;
-}
-
-@media screen and (max-width: 1344px) {
-  .logo__box2 {
-    margin-top: 8px;
-  }
-}
-@media (max-width: 707px) {
-  .logo__box2 {
-    margin-top: 10px;
-  }
 }
 
 .logoh__text {
   font-size: 8px;
-  color: #FF6B09;
+  color: #111518;
   font-size: 8px;
   margin-bottom: 5px;
 }
@@ -359,6 +354,19 @@ body {
   color: #fff;
 }
 
+.hero {
+  margin-bottom: 75px;
+}
+@media screen and (min-width: 708px) {
+  .hero {
+    margin-bottom: 75px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .hero {
+    margin-bottom: 132px;
+  }
+}
 .hero__h1 {
   color: #111518;
   font-family: Montserrat;
@@ -464,6 +472,7 @@ body {
   border-radius: 10px;
 }
 .hero__bottom__text {
+  padding-left: 15px;
   color: #111518;
   font-family: Montserrat;
   font-size: 14px;
@@ -471,17 +480,25 @@ body {
   font-weight: 700;
   line-height: 1.64; /* 32.98px */
   letter-spacing: 1.6px;
-  width: 147px;
-  height: 66px;
+  width: 100%;
+  height: 46px;
+  position: absolute;
+  left: 55px;
+  background-color: white;
 }
 @media screen and (min-width: 708px) {
   .hero__bottom__text {
+    margin-left: 8px;
+    position: static;
     width: 146px;
+    height: 66px;
     font-size: 14px;
+    padding-left: 0px;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero__bottom__text {
+    position: absolute;
     color: #111518;
     font-family: Montserrat;
     font-size: 20px;
@@ -491,19 +508,23 @@ body {
     letter-spacing: 1.6px;
     width: 239px;
     height: 66px;
+    left: 80px;
   }
 }
 .hero__bg {
-  width: 208px;
+  width: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 708px) {
   .hero__bg {
-    width: 370px;
+    width: 100%;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero__bg {
-    width: 842px;
+    width: 100%;
+    overflow: hidden;
   }
 }
 .hero__svg {
@@ -535,24 +556,31 @@ body {
 }
 .hero__item {
   display: flex;
-  gap: 8px;
   align-items: center;
+}
+@media screen and (min-width: 1344px) {
+  .hero__item {
+    position: relative;
+  }
 }
 .hero__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
+  width: 214px;
 }
 @media screen and (min-width: 708px) {
   .hero__list {
-    gap: 22px;
     flex-direction: row;
+    gap: 22px;
+    position: relative;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero__list {
     display: flex;
-    gap: 31px;
+    gap: 348px;
   }
 }
 .hero__div {
@@ -579,26 +607,27 @@ body {
   }
 }
 .hero__box {
-  padding-bottom: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 708px) {
-  .hero__box {
-    padding-bottom: 75px;
-  }
-}
-@media screen and (min-width: 1344px) {
-  .hero__box {
-    padding-bottom: 132px;
-  }
 }
 .hero__div2 {
   padding-top: 55px;
 }
 
+.hero {
+  margin-bottom: 75px;
+}
+@media screen and (min-width: 708px) {
+  .hero {
+    margin-bottom: 75px;
+  }
+}
+@media screen and (min-width: 1344px) {
+  .hero {
+    margin-bottom: 132px;
+  }
+}
 .hero__h1 {
   color: #111518;
   font-family: Montserrat;
@@ -704,6 +733,7 @@ body {
   border-radius: 10px;
 }
 .hero__bottom__text {
+  padding-left: 15px;
   color: #111518;
   font-family: Montserrat;
   font-size: 14px;
@@ -711,17 +741,25 @@ body {
   font-weight: 700;
   line-height: 1.64; /* 32.98px */
   letter-spacing: 1.6px;
-  width: 147px;
-  height: 66px;
+  width: 100%;
+  height: 46px;
+  position: absolute;
+  left: 55px;
+  background-color: white;
 }
 @media screen and (min-width: 708px) {
   .hero__bottom__text {
+    margin-left: 8px;
+    position: static;
     width: 146px;
+    height: 66px;
     font-size: 14px;
+    padding-left: 0px;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero__bottom__text {
+    position: absolute;
     color: #111518;
     font-family: Montserrat;
     font-size: 20px;
@@ -731,19 +769,23 @@ body {
     letter-spacing: 1.6px;
     width: 239px;
     height: 66px;
+    left: 80px;
   }
 }
 .hero__bg {
-  width: 208px;
+  width: 100%;
+  overflow: hidden;
 }
 @media screen and (min-width: 708px) {
   .hero__bg {
-    width: 370px;
+    width: 100%;
+    overflow: hidden;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero__bg {
-    width: 842px;
+    width: 100%;
+    overflow: hidden;
   }
 }
 .hero__svg {
@@ -775,24 +817,31 @@ body {
 }
 .hero__item {
   display: flex;
-  gap: 8px;
   align-items: center;
+}
+@media screen and (min-width: 1344px) {
+  .hero__item {
+    position: relative;
+  }
 }
 .hero__list {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: relative;
+  width: 214px;
 }
 @media screen and (min-width: 708px) {
   .hero__list {
-    gap: 22px;
     flex-direction: row;
+    gap: 22px;
+    position: relative;
   }
 }
 @media screen and (min-width: 1344px) {
   .hero__list {
     display: flex;
-    gap: 31px;
+    gap: 348px;
   }
 }
 .hero__div {
@@ -819,21 +868,9 @@ body {
   }
 }
 .hero__box {
-  padding-bottom: 75px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-@media screen and (min-width: 708px) {
-  .hero__box {
-    padding-bottom: 75px;
-  }
-}
-@media screen and (min-width: 1344px) {
-  .hero__box {
-    padding-bottom: 132px;
-  }
 }
 .hero__div2 {
   padding-top: 55px;
@@ -994,6 +1031,21 @@ body {
   .help__text {
     margin-bottom: 32px;
   }
+}
+
+.scroll {
+  padding: 10px 10px;
+  border: 2px solid #FF6B09;
+  border-radius: 50%;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #FF6B09;
+  z-index: 10;
+}
+.scroll__to {
+  width: 20px;
+  height: 20px;
 }
 
 .cards__box {
@@ -1203,6 +1255,9 @@ body {
     display: none;
   }
 }
+.program__item {
+  width: 100%;
+}
 .program__item::before {
   content: "";
   width: 16px;
@@ -1292,6 +1347,11 @@ body {
   font-weight: 700;
   line-height: 1.4;
   letter-spacing: 1.6px;
+}
+@media screen and (min-width: 708px) {
+  .program__name {
+    width: 150px;
+  }
 }
 @media screen and (min-width: 1344px) {
   .program__name {
@@ -1492,7 +1552,7 @@ body {
 }
 
 .teacher {
-  padding-top: 324px;
+  margin-top: 324px;
 }
 .teacher__box {
   display: flex;
@@ -1810,20 +1870,20 @@ body {
   }
 }
 
-.guarantee__box {
-  padding-bottom: 45px;
-  padding-top: 70px;
+.guarantee {
+  margin-top: 45px;
+  margin-bottom: 70px;
 }
 @media screen and (min-width: 708px) {
-  .guarantee__box {
-    padding-bottom: 30px;
+  .guarantee {
+    margin-bottom: 30px;
     padding-top: 70px;
   }
 }
 @media screen and (min-width: 1344px) {
-  .guarantee__box {
-    padding-bottom: 45px;
-    padding-top: 129px;
+  .guarantee {
+    margin-bottom: 45px;
+    margin-top: 129px;
   }
 }
 .guarantee__title {
@@ -2346,6 +2406,7 @@ body {
   padding: 26px 71px;
   text-align: center;
   margin-top: 60px;
+  transition: 0.7s;
 }
 @media screen and (max-width: 1024px) {
   .register__button {
@@ -2364,6 +2425,13 @@ body {
     margin-bottom: 10px;
     margin-top: 15px;
   }
+}
+
+.register__button:hover {
+  background-color: #111518;
+  color: #fff;
+  border-radius: 80px;
+  transition: 0.9s;
 }
 
 .register__input {
