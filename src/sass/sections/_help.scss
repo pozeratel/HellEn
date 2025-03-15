@@ -127,3 +127,19 @@
         }
     }
 }
+
+.scroll {
+    padding: 10px 10px;
+    border: 2px solid $main-color;
+    border-radius: 50%;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    background-color: $main-color;
+    z-index: 10;
+
+    &__to {
+        width: 20px;
+        height: 20px;
+    }
+}
